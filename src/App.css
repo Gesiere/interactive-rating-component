@@ -197,6 +197,10 @@ ul li{
   font-size: 14px;
 }
 
+.check-icon{
+  margin-right: 1rem;
+}
+
 .card-bottom button{
   border: none;
   color: var(--white);
@@ -242,6 +246,7 @@ ul li{
   .card-top{
     text-align: center;
     display: block;
+    padding: 0;
   }
 
   .card-top p{

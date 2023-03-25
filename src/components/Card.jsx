@@ -26,7 +26,11 @@ const Card = () => {
           type="range"
           step="1"
           onInput={(e) => setRangeValue(Number(e.target.value))}
-          style={{backgroundImage: `linear-gradient(to right, ${color1} ${(rangeValue - 1) / (5 - 1) * 100}%, ${color2} 0%)`}}
+          style={{
+            backgroundImage: `linear-gradient(to right, ${color1} ${
+              ((rangeValue - 1) / (5 - 1)) * 100
+            }%, ${color2} 0%)`,
+          }}
         />
         <h2>
           {isDiscount
@@ -57,16 +61,16 @@ const Card = () => {
       <div className="card-bottom">
         <ul>
           <li>
-            {' '}
-            <img src={checkIcon} alt="list" /> <span>Unlimited Websites</span>{' '}
+            <img className="check-icon" src={checkIcon} alt="check-icon" />{' '}
+            <span>Unlimited Websites</span>{' '}
           </li>
           <li>
-            {' '}
-            <img src={checkIcon} alt="list" /> <span>100% data ownership</span>{' '}
+            <img className="check-icon" src={checkIcon} alt="check-icon" />{' '}
+            <span>100% data ownership</span>{' '}
           </li>
           <li>
-            {' '}
-            <img src={checkIcon} alt="list" /> <span>Email reports</span>{' '}
+            <img className="check-icon"  src={checkIcon} alt="check-icon" />{' '}
+            <span>Email reports</span>{' '}
           </li>
         </ul>
 
