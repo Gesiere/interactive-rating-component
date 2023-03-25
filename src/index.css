@@ -1,0 +1,41 @@
+:root{
+  --primary-soft-cyan: hsl(174, 77%, 80%);
+  --primary-strong-cyan: hsl(174, 86%, 45%);
+  --primary-light-grayish-red: hsl(15, 92%, 95%);
+  --primary-light-red:hsl(15, 100%, 70%);
+  --primary-pale-blue: hsl(226, 100%, 87%);
+  --bg-pale-blue: hsl(230, 100%, 99%);
+  --neutral-light-grayish-blue-bar: hsl(224, 65%, 95%);
+  --neutral-light-grayish-blue:hsl(225, 20%, 60%);
+  --toggle-bg:hsl(223, 50%, 87%);
+  --neutral-dark-blue: hsl(227, 35%, 25%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  font-size: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-pale-blue);
+  color: var(--neutral-light-grayish-blue);
+  background-image: url('./assets/images/bg-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  font-family: 'Manrope', sans-serif;
+
+}
